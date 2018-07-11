@@ -1,8 +1,16 @@
 <template>
-    <h3>I'm an app!</h3>
+  <div>
+    <AppHeader />
+    <router-view />
+  </div>
 </template>
 <script>
+import AppHeader from './components/AppHeader';
+
 export default {
-    name: 'App'
+  name: 'App',
+  components: {
+    AppHeader
+  }
 }
 </script>
